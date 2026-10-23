@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 登录凭据（绝不提交）
+jd_cookies.txt
+*cookie*.txt
+
+# 运行产物
+*.json
+*.csv
+*.html
+*.png
+debug.log
+*.log
+
+# 环境与编辑器
+.env
+.idea/
+.vscode/
+.DS_Store
