@@ -32,6 +32,34 @@ python step5_jd_browser.py
 python step6_jd_spider.py
 ```
 
+## 运行效果
+
+`step1_static.py`（单页静态抓取）：
+
+```text
+HTTP 状态码: 200
+网页标题: Quotes to Scrape
+共找到 10 条名言
+
+作者: Albert Einstein
+名言: “The world as we have created it is a process of our thinking. ...”
+标签: ['change', 'deep-thoughts', 'thinking', 'world']
+```
+
+`step3_spider.py`（自动翻页批量抓取）：
+
+```text
+[INFO] Saved 100 items to quotes.json
+[INFO] Saved 100 items to quotes.csv
+
+===== 抓取统计 =====
+成功抓取条目: 100
+发出的请求数: 10
+失败请求数: 0
+耗时(秒): 8.16
+是否完整跑完: True
+```
+
 ## 京东爬虫的登录 Cookie 配置
 
 京东搜索页要求登录才返回商品数据，未登录请求会被重定向到登录页。`step6_jd_spider.py` 从项目根目录的 `jd_cookies.txt` 读取 Cookie：
